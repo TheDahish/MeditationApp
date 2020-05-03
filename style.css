@@ -108,7 +108,13 @@ video{
 	padding: 30px;
 
 }
-
+video {
+        display: none;
+    }
+    body {
+        background: url('./video/rain.gif');
+        background-size: cover;
+    }
   
 }
 @media (min-aspect-ratio: 16/9) {
