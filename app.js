@@ -31,7 +31,9 @@ const app = () => {
 		sound.addEventListener('click', () =>{
 			song.src = sound.getAttribute('data-sound');
 			if(screen.width> 700)
-			video.src= sound.getAttribute('data-video');
+			video.src= sound.getAttribute('data-video'+'.mp4');
+		else
+			body.style.background= `url: ${sound.getAttribute('data-video'+'.gif')}`;
 			if(song.paused){
 		song.play();
 		play.src='./svg/pause.svg';
