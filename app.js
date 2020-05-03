@@ -11,6 +11,9 @@ const app = () => {
 	//time display
 
 	const timeDisplay = document.querySelector('.time-display');
+    
+    if(screen.width<700)
+    	video.parentNode.removeChild(video);
 
 	// Length of outline
 
