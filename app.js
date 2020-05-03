@@ -27,7 +27,6 @@ const app = () => {
 	songs.forEach(sound =>{
 		sound.addEventListener('click', () =>{
 			song.src = sound.getAttribute('data-sound');
-			if(screen.width> 700)
 			video.src= sound.getAttribute('data-video');
 			if(song.paused){
 		song.play();
