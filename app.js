@@ -27,15 +27,18 @@ const app = () => {
 	songs.forEach(sound =>{
 		sound.addEventListener('click', () =>{
 			song.src = sound.getAttribute('data-sound');
+			if(screen.width> 700)
 			video.src= sound.getAttribute('data-video');
 			if(song.paused){
 		song.play();
 		play.src='./svg/pause.svg';
+		if(screen.width> 700)
 		video.play();
 	}
 	else{
 		song.pause();
 		play.src = './svg/play.svg';
+		if(screen.width> 700)
 		video.pause();
 	}
 		})
@@ -46,11 +49,13 @@ const app = () => {
 	if(song.paused){
 		song.play();
 		play.src='./svg/pause.svg';
+		if(screen.width> 700)
 		video.play();
 	}
 	else{
 		song.pause();
 		play.src = './svg/play.svg';
+		if(screen.width> 700)
 		video.pause();
 	}
 	});
