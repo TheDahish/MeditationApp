@@ -11,7 +11,6 @@ const app = () => {
 	//time display
 
 	const timeDisplay = document.querySelector('.time-display');
-	
 
 	// Length of outline
 
